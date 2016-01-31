@@ -3,8 +3,8 @@ package edu.gatech.oad.antlab.person;
 /**
  *  A simple class for person 1
  *  returns their name and a
- *  modified string 
- *  
+ *  modified string
+ *
  *  @author Brian Wang
  *  @version 1.1
  */
@@ -30,9 +30,9 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-		return input.substring(2) + input.substring(0,2);	
+		return input.substring(2) + input.substring(0,2);
 	}
-	
+
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
