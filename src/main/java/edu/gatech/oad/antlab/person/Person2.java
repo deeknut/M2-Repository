@@ -30,10 +30,10 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-    String ret = "" + input.charAt(input.length() - 1)
-          + input.subString(1, input.length()- 1)
-          + input.charAt(0);
-	  return ret;
+            String ret = "" + input.charAt(input.length() - 1)
+                + input.subString(1, input.length()- 1)
+                + input.charAt(0);
+	    return ret;
 	}
 
 	/**
