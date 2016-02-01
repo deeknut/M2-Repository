@@ -1,0 +1,32 @@
+//gradle file by Brian Wang bwang330
+
+
+apply plugin: 'java'
+
+version = '1.0'
+
+defaultTasks 'jar'
+
+javadoc {
+	source = sourceSets.main.allJava
+}
+
+jar {
+	manifest {
+		attributes 	'Implementation-Title' : 'bwang330 Brian Wang',
+					'Implementation-Version' : version,
+					'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain',
+					'Class-Path' : '../../lib/resources.jar'
+	}
+
+//	destinationDir = file(".")
+//	archiveName = 'bwang330.jar'
+}
+
+dependencies {
+	compile files('lib/resources.jar')
+}
+
+
+
+
